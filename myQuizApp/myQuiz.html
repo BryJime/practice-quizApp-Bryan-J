@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <script src="myApp.js" type="module" defer></script>
+    <style>
+        h1 {
+            text-align: center;
+            background-color: rgb(26, 61, 114);
+            color: white;
+        }
+        body {
+            background-color: rgb(130, 168, 195);
+        }
+        fieldset {
+            background-color: rgb(245, 245, 245);
+        }
+        #question {
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-size: x-large;
+        }
+        #myFieldset {
+            text-align: center;
+        }
+        #display-answer {
+            text-align: center;
+
+        }
+        #next-button {
+            text-align: right;
+        }
+        #answerOne {
+            font-size: larger;
+        }
+        #answerTwo {
+            font-size: larger;
+        }
+        #answerThree {
+            font-size: larger;
+        }
+        #answerFour {
+            font-size: larger;
+        }
+        #display-answer {
+            font-size: xx-large;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>QUIZ TIME!</h1>
+    
+    <form>
+        <legend id="question">Question Placeholder</legend>
+        <br>
+        <fieldset id="myFieldset">
+            
+            <input type="radio" id="answer1" name="ans-button" value="ans-1">
+            <label for="answer-one" id="answerOne">placeholder 1</label><br>
+
+            <input type="radio" id="answer2" name="ans-button" value="ans-2">
+            <label for="answer-two" id="answerTwo">placeholder 2</label><br>
+
+            <input type="radio" id="answer3" name="ans-button" value="ans-3">
+            <label for="answer-three" id="answerThree">placeholder 3</label><br>
+
+            <input type="radio" id="answer4" name="ans-button" value="ans-4">
+            <label for="answer-four" id="answerFour">placeholder 4</label>
+        </fieldset>
+        <div id="display-answer"></div>
+    </form>
+    <button id="next-button">NEXT</button>
+
+</body>
+
+</html>
